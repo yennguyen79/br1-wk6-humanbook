@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   get 'friends/my'
   get 'friends/friended_by'
 
