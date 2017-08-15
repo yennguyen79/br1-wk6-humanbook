@@ -29,9 +29,13 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def image_url_or_default
+    avatar.url || image_url.presence || "http://4.bp.blogspot.com/-XzHMAVCvT3M/Vib9gnQOp1I/AAAAAAAAAPs/Nt8y2vaK7AE/s1600/h9-5e17a.jpg"
+  end
+
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :gender, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :gender, :password_confirmation, :avatar)
   end
 end

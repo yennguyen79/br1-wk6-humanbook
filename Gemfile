@@ -34,6 +34,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem "rails-controller-testing"
   gem 'simplecov', :require => false
+  gem 'carrierwave', '~> 1.0'
 end
 
 group :development do
