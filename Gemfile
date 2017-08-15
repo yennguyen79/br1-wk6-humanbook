@@ -32,7 +32,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.6'
   gem 'guard-rspec', require: false
-  gem 'dragonfly', '~> 1.1.3'
+  gem "rails-controller-testing"
 end
 
 group :development do
